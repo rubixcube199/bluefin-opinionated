@@ -10,19 +10,21 @@ modules:
       - usr: /usr
 
   - type: rpm-ostree
+    repo:
+    
     install:
-      - fish
-      - neovim
-      - vim
-      - emacs
-      - waydroid
-      - podman
-      - podman-docker
-      - podman-compose
-      - distrobox
+     # - fish
+     # - neovim
+     # - vim
+     # - emacs
+     # - waydroid
+     # - podman
+     # - podman-docker
+     # - podman-compose
+     # - distrobox
     remove:
-      - firefox
-      - firefox-langpacks
+     # - firefox
+     # - firefox-langpacks
 
   - type: default-flatpaks
     notify: true 
@@ -48,5 +50,7 @@ modules:
          - org.telegram.desktop
          - com.github.tchx84.Flatseal
          - org.gnome.Ptyxis.Devel
+      remove:
+         - org.mozilla.Firefox
 
   - type: signing
