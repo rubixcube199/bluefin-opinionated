@@ -36,6 +36,10 @@ modules:
       repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
       repo-name: gnome-nightly
       repo-title: "Gnome Nightly (system-wide)"
+    system:
+      repo-url: oci+https://registry.fedoraproject.org
+      repo-name: fedora-curated
+      repo-title: "Fedora flatpaks (system-wide)"
       install:
          - io.freetubeapp.FreeTube
          - one.ablaze.floorp
