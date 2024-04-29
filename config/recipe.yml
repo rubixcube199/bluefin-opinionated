@@ -25,9 +25,6 @@ modules:
      - podman-docker
      - podman-compose
      - distrobox
-    remove:
-     - firefox
-     - firefox-langpacks
 
   - type: default-flatpaks
     notify: true 
