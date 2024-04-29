@@ -8,31 +8,31 @@ modules:
   - type: files
     files:
       - usr: /usr
-
-  - type: rpm-ostree
-    repo:
-    - https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-40&arch=x86_64
-    - https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f40&arch=x86_64
-    - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-40.repo
-    
-    install:
-     - fish
-     - neovim
-     - vim
-     - emacs
-     - waydroid
-     - podman
-     - podman-docker
-     - podman-compose
-     - distrobox
-
+ 
+# - type: rpm-ostree
+#    repo:
+#    - #https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-40&arch=x86_64 #
+#   -#  #https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f40&#arch=x86_64
+#    -  #https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS #_VERSION%/atim-starship-fedora-40.repo
+#
+#    install:
+#     - fish
+#     - neovim
+#     - vim
+#     - emacs
+#     - waydroid
+#     - podman
+#     - podman-docker
+#     - podman-compose
+#     - distrobox
+#
   - type: default-flatpaks
     notify: true 
     system:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
       repo-title: "Flathub (system-wide)"
-    user:
+    system:
       repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
       repo-name: gnome-nightly
       repo-title: "Gnome Nightly (system-wide)"
@@ -41,7 +41,7 @@ modules:
          - one.ablaze.floorp
          - dev.vencord.Vesktop
          - md.obsidian.Obsidian
-         - com.visualstudio.code
+         - com.github.johnfactotum.Foliate
          - io.github.giantpinkrobots.flatsweep
          - io.github.prateekmedia.appimagepool
          - io.github.shiftey.Desktop
