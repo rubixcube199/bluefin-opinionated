@@ -11,20 +11,23 @@ modules:
 
   - type: rpm-ostree
     repo:
+    - https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-40&arch=x86_64
+    - https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f40&arch=x86_64
+    - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-40.repo
     
     install:
-     # - fish
-     # - neovim
-     # - vim
-     # - emacs
-     # - waydroid
-     # - podman
-     # - podman-docker
-     # - podman-compose
-     # - distrobox
+     - fish
+     - neovim
+     - vim
+     - emacs
+     - waydroid
+     - podman
+     - podman-docker
+     - podman-compose
+     - distrobox
     remove:
-     # - firefox
-     # - firefox-langpacks
+     - firefox
+     - firefox-langpacks
 
   - type: default-flatpaks
     notify: true 
