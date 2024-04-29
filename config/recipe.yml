@@ -33,6 +33,7 @@ modules:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
       repo-title: "Flathub (system-wide)"
+    user:
       repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
       repo-name: gnome-nightly
       repo-title: "Gnome Nightly (system-wide)"
